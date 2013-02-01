@@ -1,0 +1,21 @@
+{
+  "name": "ssl-remove",
+  "version": "0.0.1",
+  "description": "Remove ssl from the URL.",
+  "main": "server.coffee",
+  "scripts": {
+    "start": "coffee server.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:johanneswuerbach/ssl-remove.git"
+  },
+  "dependencies": {
+    "express": "3.0.x",
+    "coffee-script": "1.4.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
