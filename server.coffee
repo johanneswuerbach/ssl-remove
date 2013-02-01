@@ -8,5 +8,5 @@ server.listen (process.env.PORT || 3000)
 
 # Express
 app.all '*', (req, res) ->
-  res.redirect "http://localhost:3000" + req.url
+  res.redirect 307, "http://localhost:3000" + req.url
 
