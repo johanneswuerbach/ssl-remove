@@ -2,17 +2,24 @@
   "name": "ssl-remove",
   "version": "0.0.1",
   "description": "Remove ssl from the URL.",
+  "author": "Johannes Würbach <johannes.wuerbach@googlemail.com>",
   "main": "server.coffee",
   "scripts": {
-    "start": "coffee server.coffee"
+    "start": "coffee server.coffee",
+    "test": "./node_modules/mocha/bin/mocha --compilers coffee:coffee-script"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:johanneswuerbach/ssl-remove.git"
   },
   "dependencies": {
-    "express": "3.0.x",
+    "express": "3.1.x",
     "coffee-script": "1.4.x"
+  },
+  "devDependencies" : {
+    "restler": "*",
+    "mocha": "*",
+    "should": "*"
   },
   "engines": {
     "node": "0.8.x",

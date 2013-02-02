@@ -1,12 +1,7 @@
+App = require './lib/app'
+port = (process.env.PORT || 3000)
 
-express = require 'express'
-util = require 'util'
-app = express()
-server = (require 'http').createServer app
-
-server.listen (process.env.PORT || 3000)
-
-# Express
-app.all '*', (req, res) ->
-  res.redirect 307, "http://localhost:3000" + req.url
+console.log "Starting server on port #{port}."
+new App port, ->
+  console.log "Ready."
 
