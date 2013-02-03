@@ -10,7 +10,7 @@ env:
 
       ss2yxcmVTXvnPMgchLYityPyQ55LUds+S4HskN+6i9HhaAWtWG8='
 after_success:
-  - if [[ "$TRAVIS_BRANCH" != "master" ] || [ "$TRAVIS_PULL_REQUEST" == "true" ]]; then echo "Do not deploy."; exit 0; fi
+  - if [[ "$TRAVIS_BRANCH" != "master" || "$TRAVIS_PULL_REQUEST" == "true" ]]; then echo "Do not deploy."; exit 0; fi
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - git remote add heroku git@heroku.com:ssl-remove.git
   - echo "Host heroku.com" >> ~/.ssh/config
