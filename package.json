@@ -5,7 +5,7 @@
   "author": "Johannes Würbach <johannes.wuerbach@googlemail.com>",
   "main": "server.coffee",
   "scripts": {
-    "start": "coffee server.coffee",
+    "start": "./node_modules/coffee-script/bin/coffee server.coffee",
     "test": "./node_modules/mocha/bin/mocha --compilers coffee:coffee-script"
   },
   "repository": {
