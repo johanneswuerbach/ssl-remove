@@ -9,7 +9,7 @@ module.exports = class App
 
     # Express
     app.get '/', (req, res) ->
-      res.send ""
+      res.redirect "https://github.com/johanneswuerbach/ssl-remove#readme"
 
     app.all /\/([a-zA-Z\.]+)\/(\d+)\/(.*)/, (req, res) ->
       url = "http://#{req.params[0]}:#{req.params[1]}/"
