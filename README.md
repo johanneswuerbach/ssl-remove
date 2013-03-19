@@ -1,5 +1,5 @@
 # ssl-remove #
-[![Build Status](https://travis-ci.org/johanneswuerbach/ssl-remove.png?branch=master)](https://travis-ci.org/johanneswuerbach/ssl-remove)
+[![Build Status](https://travis-ci.org/johanneswuerbach/ssl-remove.png?branch=master)](https://travis-ci.org/johanneswuerbach/ssl-remove) [![Dependency Status](https://gemnasium.com/johanneswuerbach/ssl-remove.png)](https://gemnasium.com/johanneswuerbach/ssl-remove)
 
 SSL-remove is an application running on Heroku, which allows to redirect from an https url to http url. This allows local and remote development without running a web server, which supports HTTPS.
 
